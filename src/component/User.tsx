@@ -34,13 +34,13 @@ const User = () => {
 
     const onSearch = (searchTerm: any) => {
         setsearch(searchTerm);
-        console.log("search", searchTerm);
+        console.log("Search", searchTerm);
     };
 
     return (
         <>
             <div className="main-container">
-                <h1>Data from API</h1>
+                <h1>Data From API</h1>
 
                 <div className="search-container">
                     <input type='text' placeholder='Search Users' id='searchInput' value={search} onChange={(e) => setsearch(e.target.value)}></input>
@@ -56,6 +56,7 @@ const User = () => {
 
                     {/* <button onClick={() => onSearch(search)}>Search</button> */}
                 </div>
+                <div><h1>Hello World</h1></div>
             </div >
         </>
     );
