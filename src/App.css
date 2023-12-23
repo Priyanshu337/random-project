@@ -1,9 +1,16 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: white;
 }
+
+h1 {
+  color: #080707;
+}
+
 
 .logo {
   height: 6em;
@@ -46,15 +53,132 @@
 
 
 #searchInput {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
+  width: 90%;
+  padding: 4px;
+  align-content: center;
   border-radius: 5px;
   font-size: 16px;
   transition: border 0.3s;
+  background-color: ivory;
+  color: #080707;
 }
 
 #searchInput:focus {
   border-radius: #007bff;
   outline: none;
 }
+
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding-bottom: 15px;
+}
+
+.dropdown:empty {
+  border: dashed;
+}
+
+.dropdown-row {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+  background-color: #080707;
+}
+
+input {
+  width: 20px;
+}
+
+.search-inner {
+  width: 50px;
+}
+
+.search-box-container {
+  display: horizontal-flex;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.search-container {
+  border: 1px solid rgb(228, 223, 223);
+  /* Add a 1px solid border with a light gray color */
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  margin-top: 1%;
+  width: auto;
+
+  height: 40px;
+  align-items: center;
+  background-color: aqua;
+  /* Add some padding to the container */
+}
+
+.profilename {
+  text-align: center;
+  background-color: rgb(228, 223, 223);
+  border-style: groove;
+  border-color: blueviolet transparent;
+  padding-top: 10pt;
+}
+
+.second-container {
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-left: 1%;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-inline: 10px;
+  height: 500px;
+  width: 500px;
+  border: 2px solid grey;
+  color: green;
+}
+
+.profilename {
+  text-align: center;
+  color: #007bff;
+}
+
+
+/* Add box border to the dropdown */
+.dropdown {
+  border: 1px solid rgb(196, 36, 36);
+}
+
+/* Add margin to the dropdown rows for separation */
+.dropdown-row {
+  margin: 2px 0;
+  color: white r
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home,
+.users,
+.images,
+.comments {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+
+}
+
+.body {
+  margin: 0;
+}
+
+/******************************************** css for navbar  ***************************************************/

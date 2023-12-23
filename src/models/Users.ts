@@ -24,5 +24,11 @@ export interface Company {
     catchPhrase: string;
     bs: string;
 }
+export interface UserImage {
+    albumId: number;
+    id: number;
+    title: string;
+    ImgUrl: string;
+}
 
 
