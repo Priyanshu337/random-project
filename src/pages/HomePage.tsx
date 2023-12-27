@@ -1,11 +1,10 @@
 import React from 'react'
-
-
 function HomePage() {
 
     return (
         <div>
-            <h1>This is home page </h1>
+            <h3 style={{ color: "black" }}>Welcome to Home Page</h3>
+            {/* <input type='text'> </input> */}
         </div>
     )
 }

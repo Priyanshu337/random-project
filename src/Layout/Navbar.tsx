@@ -18,7 +18,13 @@ function Navbar() {
                     < FaIcons.FaBars onClick={showSidebar} />
                 </div>
                 <Sidebar sidebar={sidebar} showSidebar={showSidebar} />
+                <div className='nav-title'>
+                    <h1>Priyanshu</h1>
+                </div>
+
+
             </div>
+
         </IconContext.Provider>
 
     )

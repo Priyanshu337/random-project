@@ -11,7 +11,9 @@ function NamePage({ value, setValue }: namepage) {
 
 
     return (
-        < UserSearch setValue={setValue} value={value} />
+        <div className='Name-class'>
+            < UserSearch setValue={setValue} value={value} />
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
-import axios from 'axios';
+import axios from 'Axios';
 import { useEffect, useState } from 'react';
 import React from 'react';
+import "./ShowImage.css";
 
 const fetchRandomData = (): any => {
     // Fetching data from the API
@@ -9,6 +10,7 @@ const fetchRandomData = (): any => {
 
 interface showImage {
     val: any;
+
 }
 export default function ShowImage({ val }: showImage) {
 

@@ -76,3 +76,12 @@
 span {
     margin-left: 16px;
 }
+
+.nav-title {
+    text-align: center;
+    margin-left: 850px;
+}
+
+.nav-title h1 {
+    color: white;
+}
