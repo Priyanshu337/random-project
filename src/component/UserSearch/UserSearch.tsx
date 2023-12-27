@@ -1,8 +1,8 @@
 import React from 'react';
-import { Users } from '../models/Users';
+import { Users } from '../../models/Users';
 import { useState, useEffect } from 'react';
-import { UsersService } from '../Services/UserService';
-import '../App.css';
+import { UsersService } from '../../Services/UserService';
+import './UserSearch.css';
 
 interface State {
     users: Users[],

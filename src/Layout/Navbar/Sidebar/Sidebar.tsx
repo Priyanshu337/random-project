@@ -6,7 +6,6 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 
 function Sidebar({ sidebar, showSidebar }: any) {
-
     if (!sidebar)
         return null;
 
@@ -31,8 +30,6 @@ function Sidebar({ sidebar, showSidebar }: any) {
                     })}
             </ul>
         </nav>
-
-
     )
 }
 

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import * as FaIcons from "react-icons/fa";
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar/Sidebar';
 
 function Navbar() {
 

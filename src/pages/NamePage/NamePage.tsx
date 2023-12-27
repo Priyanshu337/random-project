@@ -1,5 +1,5 @@
 import React from 'react'
-import UserSearch from '../component/UserSearch'
+import UserSearch from '../../component/UserSearch/UserSearch'
 
 
 interface namepage {

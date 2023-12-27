@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowImage from '../component/ShowImage'
+import ShowImage from '../../component/ShowImage/ShowImage'
 import "./ImagePage.css"
 
 interface imgDisp {

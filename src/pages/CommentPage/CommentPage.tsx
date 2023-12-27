@@ -1,5 +1,5 @@
 import React from 'react'
-import Comments from '../component/comment'
+import Comments from '../../component/Comment/comment'
 
 interface comment {
     value: any
