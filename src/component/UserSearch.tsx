@@ -40,24 +40,29 @@ const UserSearch = ({ setValue, value }: UserSearchProps) => {
         setsearch({});
     };
 
+
     return (
         <>
             <div className="search-container">
-                <input type='text' placeholder='Search Users' id='searchInput' value={search?.name} onChange={(e) => setsearch({ name: e.target.value })}></input>
+                <input type='text' placeholder=' Search Users' className='searchInput' value={search?.name} onChange={(e) => setsearch({ name: e.target.value })} ></input>
 
-                {users.filter(item => {
-                    const searchTerm = search?.name?.toLowerCase();
-                    const name = item.name.toLowerCase();
-                    return searchTerm && name.startsWith(searchTerm) && name !== searchTerm;
-                })
-                    .map((item: Users) => (
-                        <div onClick={() => onSearch(item)} className="dropdown-row" key={item.id} > {item.name}</div>
-                    ))}
-            </div>
+                < div className='drop-down-container'>
+                    {users.filter(item => {
+                        const searchTerm = search?.name?.toLowerCase();
+                        const name = item.name.toLowerCase();
+                        return searchTerm && name.startsWith(searchTerm) && name !== searchTerm;
+                    })
 
-            {
-                value.name &&
-                <div className='profilename'> {value?.name}</div>}
+                        .map((item: Users) => (
+                            <div onClick={() => onSearch(item)} className="search-results" key={item.id} > {item.name}</div>
+                        ))}
+                </div>
+
+                {
+                    value.name &&
+                    <div className='profilename'> {value?.name}</div>}
+            </div >
+
         </>
     );
 }
@@ -66,17 +71,4 @@ export default UserSearch;
 
 
 
-
-
-// https://api.geoapify.com/v1/geocode/autocomplete?text=delhi&apiKey=4f3bb3f731eb485fbd81baac8578be50
-
-
-
-// const profileName = useMemo(() => {
-//     {
-//         users.filter(item => {
-//             const searchTerm = search.toLowerCase();
-//             const name = item.name.toLowerCase();
-//             return searchTerm && name.startsWith(searchTerm) && name !== searchTerm;
-//         }, [search])
 

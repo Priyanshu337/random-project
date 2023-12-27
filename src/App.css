@@ -11,19 +11,6 @@ h1 {
   color: #080707;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -550px;
-  width: 100%;
-  height: 100px;
-}
 
 .logo {
   height: 6em;
@@ -65,21 +52,6 @@ h1 {
 }
 
 
-#searchInput {
-  width: 90%;
-  padding: 4px;
-  align-content: center;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border 0.3s;
-  background-color: white;
-  color: #080707;
-}
-
-#searchInput:focus {
-  border-radius: #007bff;
-  outline: none;
-}
 
 
 .dropdown {
@@ -100,10 +72,6 @@ h1 {
   background-color: #9a878f;
 }
 
-input {
-  width: 20px;
-}
-
 .search-inner {
   width: 50px;
 }
@@ -114,36 +82,74 @@ input {
   /* align-items: center; */
 }
 
+
+/* .search-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 100px;
+} */
+
 .search-container {
   border: 1px solid;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 15px;
-  padding-right: 5px;
-  margin-top: 1%;
-  width: 50%;
-  height: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-  /* Add some padding to the container */
+  flex-direction: column;
+  position: absolute;
+  margin-top: 250px;
+}
+
+
+.searchInput {
+  width: 40%;
+  height: 50px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profilename {
   text-align: center;
-  background-color: rgb(228, 223, 223);
+  background-color: white;
   border-style: groove;
-  border-color: blueviolet transparent;
-  padding-top: 10pt;
-  width: 50%;
-  color: black
+  width: 40%;
+  color: black;
+  border: 1px solid;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 20px;
 }
 
+.drop-down-container {
+  width: 40%;
+  border: #080707;
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.search-results {
+  margin: 2px 0;
+  width: 100%;
+  border-radius: 5px;
+  color: black;
+}
+
+
 .second-container {
-  text-align: left;
+  text-align: center;
   margin-top: 5%;
   margin-bottom: auto;
-  margin-left: 1%;
   margin-right: auto;
-  padding-left: 10%;
   padding-inline: 10px;
   height: 500px;
   width: 500px;
@@ -158,14 +164,6 @@ input {
 .dropdown {
   border: 1px solid rgb(196, 36, 36);
 }
-
-/* Add margin to the dropdown rows for separation */
-.dropdown-row {
-  margin: 2px 0;
-  color: white r
-}
-
-
 
 
 * {

@@ -11,9 +11,7 @@ function NamePage({ value, setValue }: namepage) {
 
 
     return (
-        <div className='flex-container'>
-            < UserSearch setValue={setValue} value={value} />
-        </div>
+        < UserSearch setValue={setValue} value={value} />
     )
 }
 

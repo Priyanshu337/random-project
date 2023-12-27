@@ -19,8 +19,6 @@ function App() {
       <div >
         <BrowserRouter>
           <Navbar />
-
-
           <Routes>
             <Route path="/Home" element={< HomePage />} />
             <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
