@@ -27,7 +27,7 @@
     transition: 850ms;
 }
 
-.nav-menu {
+.nav-menu-active {
     background-color: #060b26;
     padding-top: 10px;
     left: 0;

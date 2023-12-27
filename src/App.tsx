@@ -20,16 +20,15 @@ function App() {
         <BrowserRouter>
           <Navbar />
 
-          <div className='flex-container-1'>
-            <Routes>
 
-              <Route path="/Home" element={< HomePage />} />
-              <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
-              <Route path="/Images" element={< ImagePage value={value} />} />
-              <Route path="/Comments" element={< CommentPage value={value} />} />
-              <Route path="/*" element={<NotFoundPage />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path="/Home" element={< HomePage />} />
+            <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
+            <Route path="/Images" element={< ImagePage value={value} />} />
+            <Route path="/Comments" element={< CommentPage value={value} />} />
+            <Route path="/*" element={<NotFoundPage />} />
+          </Routes>
+
         </BrowserRouter>
       </div>
     </>

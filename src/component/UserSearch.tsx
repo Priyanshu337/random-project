@@ -55,8 +55,9 @@ const UserSearch = ({ setValue, value }: UserSearchProps) => {
                     ))}
             </div>
 
-
-            <div className='profilename'> {value?.name}</div>
+            {
+                value.name &&
+                <div className='profilename'> {value?.name}</div>}
         </>
     );
 }
