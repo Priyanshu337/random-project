@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 import React from 'react';
 import "./ShowImage.css";
 
-const fetchRandomData = (): any => {
-    // Fetching data from the API
-    return axios.get(`https://jsonplaceholder.typicode.com/photos`)
-}
+
 
 interface showImage {
     val: any;
@@ -15,6 +12,10 @@ interface showImage {
 export default function ShowImage({ val }: showImage) {
 
     const [user, setUser] = useState({});
+    const fetchRandomData = (): any => {
+        // Fetching data from the API
+        return axios.get(`https://jsonplaceholder.typicode.com/photos`)
+    }
 
     const fetchImage = async () => {
         const response = await fetchRandomData();
